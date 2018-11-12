@@ -14,7 +14,7 @@ def rewind(f):
 
 #Define a function print_a_line() to print the line number and that particular line
 def print_a_line(line_count, f):
-    print(line_count, f.readline())
+    print(line_count, f.readline(), end ="")
 
 #Open the file and assign it to file object current_file
 current_file = open(input_file)
@@ -32,8 +32,8 @@ print("let's print three lines:")
 current_line = 1
 print_a_line(current_line, current_file)
 
-current_line = current_line + 1
+current_line += 1
 print_a_line(current_line, current_file)
 
-current_line = current_line + 1
+current_line += 1
 print_a_line(current_line, current_file)
