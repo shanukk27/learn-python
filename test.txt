@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 This is line 1
 This is line 2
 This is line 3
+=======
+This is line1
+This is line2
+This is line3
+>>>>>>> 02f3541e60747a80a7556a6534dbc4c57df4ca70
