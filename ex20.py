@@ -1,29 +1,31 @@
-#From sys module import argv variable
+# From sys module import argv identifier
 from sys import argv
 
-#Assign the argument variable to two variables script which is the script name and input_file which is the file name to process
+#Assign all arguments for this script to two variables script and input_file
 script, input_file = argv
 
-#Define a function print_all() and read the file.
+#Define a function print_all() with a single argument and print that opened file
 def print_all(f):
     print(f.read())
 
-#Define a function rewind and seek to seek to the start of the file
+#Define a function rewind() to go to the start of the file.
 def rewind(f):
     f.seek(0)
 
-#Define a function 
+#Define a function print_a_line() to print the line number and that particular line
 def print_a_line(line_count, f):
-    print(line_count, f.readline())
+    print(line_count, f.readline(), end = "")
 
+#Open the file and assign it to file object current_file
 current_file = open(input_file)
 
-print("First, let's print the whole file")
+print("First, let's print the whole file:\n")
 
 print_all(current_file)
 
 print("Now, let's rewind, kind of like a tape")
 
+#Run function rewind which goes to position zero of the file
 rewind(current_file)
 
 print("Let's print three lines")
