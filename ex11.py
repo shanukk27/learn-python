@@ -1,5 +1,5 @@
 print("How old are you?", end =' ')
-age = (input()
+age = input()
 print("How tall are you?", end = ' ')
 height = input()
 print("How much do you weigh?", end = ' ')

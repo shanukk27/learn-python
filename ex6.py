@@ -20,4 +20,5 @@ w = "This is the left side of..."
 e = "a string with a right side."
 
 print (w + e)
-print(f"{} {}")
+print("{} {}".format(w, e))
+print(f"{w} {e}")
